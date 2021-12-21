@@ -10,5 +10,4 @@ public class MainProgram {
 		program.start();
 		System.out.println("==> Chương trình đã kết thúc <==");
 	}
-
 }

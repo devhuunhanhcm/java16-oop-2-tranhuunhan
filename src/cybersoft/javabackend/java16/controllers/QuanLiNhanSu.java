@@ -101,6 +101,10 @@ public class QuanLiNhanSu {
 	}
 
 	public void xuatDanhSach() {
+		if(danhSachNhanSu.isEmpty()) {
+			System.out.println("Không có nhân sự trong công ty.Hãy thêm nhân sự.");
+			return;
+		}
 		System.out.println("==================>Danh Sách Toàn Bộ Nhân Sự<===================");
 		for (NhanSu nhanSu : danhSachNhanSu) {
 			nhanSu.xuatThongTin();
@@ -193,6 +197,24 @@ public class QuanLiNhanSu {
 		}
 		quanLiGiamDoc.xuatThuNhap(tongLuongCongTy(), congTy.getDoanhThuThang());
 		return;
+	}
+
+	public void sapXepLuongDesc() {
+		if(danhSachNhanSu.isEmpty()) {
+			System.out.println("==> Không có nhân sự trong công ty!Hãy thêm nhân sự.");
+			return;
+		}
+		
+		Collections.sort(danhSachNhanSu, new Comparator<NhanSu>() {
+
+			@Override
+			public int compare(NhanSu o1, NhanSu o2) {
+				
+				return (o1.tinhLuong() > o2.tinhLuong()) ? -1 : 1;
+			}
+		});
+		System.out.println("===>Danh Sách lương được sắp xếp giảm dần<===");
+		xuatLuong();
 	}
 }
 /*

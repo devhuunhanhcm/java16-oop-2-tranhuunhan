@@ -38,8 +38,9 @@ public class QuanLiNhanSuConsole {
 				.append("\n\t8. Tìm Nhân viên thường có lương cao nhất")
 				.append("\n\t9. Tìm Trưởng Phòng có số lượng nhân viên dưới quyền nhiều nhất")
 				.append("\n\t10. Sắp xếp nhân viên toàn công ty theo thứ tự abc ")
-				.append("\n\t11. Tìm Giám Đốc có số lượng cổ phần nhiều nhất")
-				.append("\n\t12. Tính và Xuất tổng THU NHẬP của từng Giám Đốc")
+				.append("\n\t11. Sắp xếp nhân viên toàn công ty theo thứ tự giảm dần.")
+				.append("\n\t12. Tìm Giám Đốc có số lượng cổ phần nhiều nhất")
+				.append("\n\t13. Tính và Xuất tổng THU NHẬP của từng Giám Đốc")
 				.append("\n\t0.Thoát")
 				.append("\nChọn: ")
 				.toString());
@@ -84,9 +85,12 @@ public class QuanLiNhanSuConsole {
 			controller.sapXepThongTinTheoTen();
 			break;
 		case 11:
-			controller.timGiamDocCoPhanHighest();
+			controller.sapXepLuongDesc();
 			break;
 		case 12:
+			controller.timGiamDocCoPhanHighest();
+			break;
+		case 13:
 			controller.tongThuNhapGiamDoc();
 			break;
 		case 0:
