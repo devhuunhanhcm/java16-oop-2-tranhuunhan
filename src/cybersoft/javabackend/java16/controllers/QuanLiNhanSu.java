@@ -118,13 +118,13 @@ public class QuanLiNhanSu {
 	
 	//xuất list chọn trưởng phòng
 	public TruongPhong chonTruongPhong(Scanner sc) {
-		System.out.println("==> Chọn Trưởng phòng cho nhân viên <==");
+		System.out.print("\n==> Chọn Trưởng phòng cho nhân viên <==");
 		TruongPhong tp = quanLiTruongPhong.chonTruongPhong(sc);
 		return tp;
 	}
 	//xuất list chọn nhân viên
 	public NhanVien chonNhanVien(Scanner sc) {
-		System.out.println("==> Chọn nhân viên cho trưởng phòng <==");
+		System.out.print("\n==> Chọn nhân viên cho trưởng phòng <==");
 		NhanVien nv = quanLiNhanVien.xuatChonNhanVien(sc);
 		return nv;
 	}

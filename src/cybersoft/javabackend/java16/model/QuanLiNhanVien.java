@@ -31,7 +31,7 @@ public class QuanLiNhanVien {
 		System.out.print("\n==> Chọn nhân viên số: ");
 		choose = Integer.parseInt(sc.nextLine()) ;
 		while(choose < 0 || choose > danhSachNhanVien.size()) {
-			System.err.println("Chọn nhân viên không tồn tại!!");
+			System.err.println("==> Chọn nhân viên không tồn tại!!");
 			System.out.print("==> Chọn lại nhân viên số: ");
 			choose = Integer.parseInt(sc.nextLine());
 		}

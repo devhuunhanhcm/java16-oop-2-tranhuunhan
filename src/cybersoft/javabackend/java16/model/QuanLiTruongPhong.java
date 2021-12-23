@@ -28,7 +28,7 @@ public class QuanLiTruongPhong {
 			tp.chonTruongPhong(i);
 			i++;
 		}
-		System.out.print("\nChọn trưởng phòng số: ");
+		System.out.print("\n==>Chọn trưởng phòng số: ");
 		choose = Integer.parseInt(sc.nextLine());
 		while (choose < 0 || choose > danhSachTruongPhong.size()) {
 			System.err.println("Chọn trưởng phòng không tồn tại!!");

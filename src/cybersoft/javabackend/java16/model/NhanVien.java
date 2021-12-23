@@ -44,7 +44,7 @@ public class NhanVien extends NhanSu {
 						.append(", Mã Số: ").append(this.maSo)
 						.append(" ]")
 						.toString();
-		System.out.println(thongTin);
+		System.out.print(thongTin);
 	}
 	public TruongPhong getTruongPhongQuanLy() {
 		return truongPhongQuanLy;
